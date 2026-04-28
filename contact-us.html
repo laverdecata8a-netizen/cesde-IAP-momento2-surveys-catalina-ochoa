@@ -1,166 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
     <title>Contacto - Sistema de encuestas</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #f188e9;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-        }
-        section, article {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            max-width: 800px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="email"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        fieldset {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 4px;
-        }
-        legend {
-            font-weight: bold;
-        }
-        .inline-group {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-        .inline-group label {
-            display: inline-flex;
-            align-items: center;
-            font-weight: normal;
-        }
-        button {
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #f188e9;
-            border: none;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #f188e9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header,
+      footer {
+        background-color: #f188e9;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      main {
+        padding: 20px;
+      }
+      section,
+      article {
+        background: white;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 800px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 4px;
+      }
+      legend {
+        font-weight: bold;
+      }
+      fieldset > label {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: normal;
+      }
+      button {
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #f188e9;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #f188e9;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="survey.html">Crear encuesta</a></li>
-            </ul>
-        </nav>
+      <h1>Contacto</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="create.html">Crear encuesta</a></li>
+          <li><a href="survey.html">Encuestas</a></li>
+          <li><a href="contact-us.html">Contacto</a></li>
+
+        </ul>
+      </nav>
     </header>
     <main>
-        <section>
-            <h2>Formulario de contacto</h2>
-            <article>
-                <p>Complete este formulario para enviarnos sus dudas o sugerencias sobre el sistema de encuestas.</p>
-                <form action="#" method="post">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" required>
+      <section>
+        <h2>Formulario de contacto</h2>
+        <article>
+          <p>
+            Complete este formulario para enviarnos sus dudas o sugerencias
+            sobre el sistema de encuestas de Hábitos de estudio en programación.
+          </p>
+          <form action="#" method="post">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required />
 
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
 
-                    <fieldset>
-                        <legend>Motivo de contacto</legend>
-                        <div class="inline-group">
-                            <label for="sugerencia">
-                                <input type="radio" id="sugerencia" name="motivo" value="sugerencia" required>
-                                Sugerencia
-                            </label>
-                            <label for="consulta">
-                                <input type="radio" id="consulta" name="motivo" value="consulta">
-                                Consulta
-                            </label>
-                            <label for="reporte">
-                                <input type="radio" id="reporte" name="motivo" value="reporte">
-                                Reporte de error
-                            </label>
-                        </div>
-                    </fieldset>
+            <fieldset>
+              <legend>Motivo de contacto</legend>
+              <label for="sugerencia">
+                <input
+                  type="radio"
+                  id="sugerencia"
+                  name="motivo"
+                  value="sugerencia"
+                  required
+                />
+                Sugerencia
+              </label>
+              <label for="consulta">
+                <input
+                  type="radio"
+                  id="consulta"
+                  name="motivo"
+                  value="consulta"
+                />
+                Consulta
+              </label>
+              <label for="reporte">
+                <input
+                  type="radio"
+                  id="reporte"
+                  name="motivo"
+                  value="reporte"
+                />
+                Reporte de error
+              </label>
+            </fieldset>
 
-                    <fieldset>
-                        <legend>Preferencias de contacto</legend>
-                        <div class="inline-group">
-                            <label for="notificaciones">
-                                <input type="checkbox" id="notificaciones" name="preferencias" value="notificaciones">
-                                Recibir notificaciones
-                            </label>
-                            <label for="novedades">
-                                <input type="checkbox" id="novedades" name="preferencias" value="novedades">
-                                Recibir novedades
-                            </label>
-                        </div>
-                    </fieldset>
+            <fieldset>
+              <legend>Preferencias de contacto</legend>
+              <label for="notificaciones">
+                <input
+                  type="checkbox"
+                  id="notificaciones"
+                  name="preferencias"
+                  value="notificaciones"
+                />
+                Recibir notificaciones
+              </label>
+              <label for="novedades">
+                <input
+                  type="checkbox"
+                  id="novedades"
+                  name="preferencias"
+                  value="novedades"
+                />
+                Recibir novedades
+              </label>
+            </fieldset>
 
-                    <label for="curso">Curso relacionado</label>
-                    <select id="curso" name="curso" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="iap">IAP</option>
-                        <option value="dev">Desarrollo de Software</option>
-                        <option value="otro">Otro</option>
-                    </select>
+            <label for="tema">Tema de interés</label>
+            <select id="tema" name="tema" required>
+              <option value="">Selecciona una opción</option>
+              <option value="habitos">Hábitos de estudio en programación</option>
+              <option value="lenguajes">Lenguajes de programación</option>
+              <option value="ia">Uso de IA para programar</option>
+              <option value="otro">Otro</option>
+            </select>
 
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </article>
-        </section>
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+      </section>
     </main>
     <footer>
-        <p>Proyecto académico sin frameworks - 2026 Momento 2</p>
+      <p>"Proyecto académico sin frameworks - 2026 Momento 2"</p>
     </footer>
-</body>
+  </body>
 </html>

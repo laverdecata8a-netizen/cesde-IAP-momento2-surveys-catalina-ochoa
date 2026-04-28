@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Encuestas - Sistema de encuestas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #f188e9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section, article {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        fieldset label {
+            display: block;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #f188e9;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #f188e9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encuestas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="create.html">Crear encuesta</a></li>
+                <li><a href="survey.html">Encuestas</a></li>
+                <li><a href="contact-us.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Encuesta sobre Hábitos de Estudio en Programación</h2>
+            <article>
+                <p>Responda las siguientes preguntas sobre sus hábitos de estudio en programación.</p>
+                <form action="#" method="post">
+                    <fieldset class="question">
+                        <legend>¿Con qué frecuencia practica programación?</legend>
+                        <label for="freq1">
+                            <input type="radio" id="freq1" name="frecuencia" value="diario" required>
+                            Diario
+                        </label>
+                        <label for="freq2">
+                            <input type="radio" id="freq2" name="frecuencia" value="semanal">
+                            Semanal
+                        </label>
+                        <label for="freq3">
+                            <input type="radio" id="freq3" name="frecuencia" value="mensual">
+                            Mensual
+                        </label>
+                        <label for="freq4">
+                            <input type="radio" id="freq4" name="frecuencia" value="ocasional">
+                            Ocasional
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="question">
+                        <legend>¿Qué recursos utiliza principalmente para aprender?</legend>
+                        <label for="rec1">
+                            <input type="radio" id="rec1" name="recursos" value="videos" required>
+                            Videos
+                        </label>
+                        <label for="rec2">
+                            <input type="radio" id="rec2" name="recursos" value="cursos">
+                            Cursos en línea
+                        </label>
+                        <label for="rec3">
+                            <input type="radio" id="rec3" name="recursos" value="aprendizaje">
+                            Aprendizaje autonomo
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="question">
+                        <legend>¿Cuál es su mayor dificultad al aprender programación?</legend>
+                        <label for="dif1">
+                            <input type="radio" id="dif1" name="dificultad" value="sintaxis" required>
+                            Sintaxis del lenguaje
+                        </label>
+                        <label for="dif2">
+                            <input type="radio" id="dif2" name="dificultad" value="logica">
+                            Lógica de programación
+                        </label>
+                        <label for="dif3">
+                            <input type="radio" id="dif3" name="dificultad" value="depuracion">
+                            Depuración de errores
+                        </label>
+                        <label for="dif4">
+                            <input type="radio" id="dif4" name="dificultad" value="motivacion">
+                            Motivación
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="question">
+                        <legend>¿Cuánto tiempo dedica semanalmente al estudio de programación?</legend>
+                        <label for="time1">
+                            <input type="radio" id="time1" name="tiempo" value="menos5" required>
+                            Menos de 5 horas
+                        </label>
+                        <label for="time2">
+                            <input type="radio" id="time2" name="tiempo" value="5-10">
+                            Entre 5-10 horas
+                        </label>
+                        <label for="time3">
+                            <input type="radio" id="time3" name="tiempo" value="10-20">
+                            Entre 10-20 horas
+                        </label>
+                        <label for="time4">
+                            <input type="radio" id="time4" name="tiempo" value="mas20">
+                            Más de 20 horas
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Enviar Encuesta</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>"Proyecto académico sin frameworks - 2026 Momento 2"</p>
+    </footer>
+</body>
+</html>
