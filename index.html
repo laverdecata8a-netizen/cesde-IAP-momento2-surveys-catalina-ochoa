@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Sistema de encuestas Hábitos de estudio en programación</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #f188e9;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      section {
+        padding: 20px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #f188e9;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #f188e9;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de encuestas</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="create.html">Crear encuesta</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="bienvenida">
+        <h2>Bienvenida al sistema</h2>
+        <p>
+          Este sistema de encuesta tiene como objetivo analizar los hábitos de
+          estudio de quienes aprenden programación. Permite recopilar información
+          sobre la frecuencia de práctica, recursos utilizados y dificultades
+          comunes. Los resultados ayudarán a mejorar las estrategias de
+          aprendizaje y a fortalecer la enseñanza de la programación mediante
+          decisiones basadas en datos.
+        </p>
+      </section>
+      <section id="enlace-survey">
+        <h2>Ver Encuestas</h2>
+        <p>Accede a las encuestas creadas y participa en ellas.</p>
+        <button onclick="window.location.href = 'survey.html'">
+          Ir a Encuestas
+        </button>
+      </section>
+    </main>
+    <footer>
+      <p>Catalina Ochoa - 2026 - IAP</p>
+      <p>Proyecto académico sin frameworks - 2026 Momento 2</p>
+    </footer>
+  </body>
+</html>
