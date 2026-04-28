@@ -1,0 +1,90 @@
+/* Estilos compartidos para el sitio de encuestas */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header,
+footer {
+  background-color: #f188e9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 20px;
+}
+section,
+article {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section#Bienvenida,
+section#Enlace\ survey {
+  max-width: 700px;
+}
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+legend {
+  font-weight: bold;
+}
+fieldset label {
+  display: block;
+  margin: 10px 0;
+  font-weight: normal;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #f188e9;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e17bc2;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
